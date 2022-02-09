@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+body{
+    background-color: hsl(226, 43%, 10%);
+    font-family: 'Rubik' , sans-serif;
+    color: white;
+    /* overflow: hidden; */
+    cursor: pointer;
+ 
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+/* .report{
+    margin-top: 5%;
+    padding-left: 12%;
+} */
+span{
+    font-weight: 300;
+    font-size: 35px;
+}
+.profile{
+    height: 365px;
+    /* width: 13%; */
+    width: 190px;
+    background-color:  hsl(235, 46%, 20%);
+    border-radius:10px;
+}
+.small{
+    font-size: 12px;
+}
+.user{
+    background-color:   hsl(246, 80%, 60%);
+    border-radius:10px;
+    height: 229px;
+    padding-left: 15px;
+}
+.photo{
+  width: 40px;
+  height: 40px;
+  margin: 10px 10px 5px 10px;
+  border: 2px solid white;
+  border-radius: 60%;
+}
+.footer{
+    margin-top: 20px;
+}
+.menu{
+    color:  hsl(236, 100%, 87%) ;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    padding:6px 15px ;
+    /* padding-left: 10%;
+    padding-bottom: 5%; */
+}
+.menu:hover{
+    color:white;
+}
+.six{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 8px;
+    /* max-height: 10.5em; */
+}
+.one,.two{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* width: 115%; */
+}
+/* .two{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 115%;
+    padding-top: 5.5%;
+} */
+/* .cards{
+    padding-right: 2%;
+    height: 50%;
+} */
+.property{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    /* width: 220px; */
+    /* height: 18vh; */
+    margin-top: 35px;
+    padding: 20px 15px;
+    z-index: 1;
+    position: relative;
+}
+.property:hover{
+    background-color: hsl(235, 45%, 61%);
+}
+
+.sizing{
+    /* width: 11em; */
+    /* height: 10.5em; */
+    width: 180px;
+    margin: 5px;
+    border-radius: 12px ;
+    position: relative;
+}
+.work{
+  background-color: hsl(15, 100%, 70%);
+}
+ .img {
+    /* height: 8%;
+    margin-left: 8%; */
+    width: 60px;
+    top:1%;
+    right:1%;
+    position: absolute;
+    z-index: 0.5;
+}
+.data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.play{
+    background-color: hsl(195, 74%, 62%);
+}
+
+.study{
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise{
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social{
+    background-color: hsl(264, 64%, 52%);
+}
+
+.self{
+    background-color: hsl(43, 84%, 65%);
+}
+
+
+.row-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+/* .title{
+    font-size: 18px;
+    font-weight: 200;
+    padding-left: 9%;
+    padding-top: 5%;
+} */
+/* .points{
+    margin-top: -12%;
+    margin-left: 80%;
+} */
+.hours{
+    /* margin-top: 3%; */
+    padding: 10px 0px;
+    font-size: 38px;
+    font-weight: 300;
+}
+.description,#alpha{
+    color:  hsl(236, 100%, 87%) ;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+
+/*Tab View */
+@media (max-width:768px) {
+    .property{
+        margin-top: 35px;
+        padding: 15px 10px;
+        margin-top: 30px;
+    }
+    
+    .sizing{
+        width: 135px;
+        margin: 5px;
+  
+    }
+
+    .hours{
+        padding: 8px 0px;
+        font-size: 28px;
+        font-weight: 300;
+    }
+
+    .title{
+        font-size:15px;
+    }
+
+    .profile{
+        height: 298px;
+        width: 150px;
+    }
+    .user{
+        height: 175px;
+    }
+    span{
+        font-size: 25px;
+    }
+}
+
+/* Mobile View */
+@media (max-width:600px) {
+    .container{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .row-2,.data{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .profile{
+        height: 155px;
+        width: 420px;
+    }
+    .user{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 95px;
+    }
+
+    .property{
+        padding: 20px 15px;
+        margin-top: 35px;
+    }
+    
+    .sizing{
+       
+        width: 420px;
+        margin: 10px;
+  
+    }
+    .one{
+        flex-direction: column;
+    }
+    .two{
+        flex-direction: column;
+    }
+ 
+    .title{
+        font-size: 18px;
+    }
+    .hours{
+        font-size: 35px;
+    }
+  
+    .description{
+    font-size: 15px;
+    }
+}
+
+@media (max-width:445px) {
+    .profile{
+        width: 299px;
+    }
+ 
+    
+    .sizing{
+       
+        width: 299px;
+  
+    }
+ 
+    .title{
+        font-size: 15px;
+    }
+    .hours{
+        font-size: 30px;
+    }
+  
+    .description{
+    font-size: 12px;
+    }
+}
